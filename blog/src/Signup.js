@@ -24,7 +24,7 @@ export default function Signup() {
   const navigate = useNavigate();
   const contxt = React.useContext(contextname);
 
-  const handleSubmit = (event) => {
+  const handleSubmit =async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     if (
