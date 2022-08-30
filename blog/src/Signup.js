@@ -24,7 +24,7 @@ export default function Signup() {
   const navigate = useNavigate();
   const contxt = React.useContext(contextname);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     if (
@@ -73,7 +73,7 @@ export default function Signup() {
             <img
               style={{ width: "60px" }}
               alt=""
-              src="telegram.png"
+              src="https://cdn-icons-png.flaticon.com/24/3959/3959542.png"
             />
           </Avatar>
           <Typography component="h1" variant="h5">
